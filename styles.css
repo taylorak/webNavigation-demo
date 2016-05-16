@@ -1,0 +1,7 @@
+#muststache-bestAnswer {
+  width: 100%;
+  background-color: red;
+  height: 50px;
+  border: 1px solid black;
+  z-index: 9999;
+}

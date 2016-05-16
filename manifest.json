@@ -1,0 +1,30 @@
+{
+  "name": "webNavigation-demo",
+  "version": "0.1",
+  "description": "webNavigation demo",
+  "background": {
+    "persistent": false,
+    "scripts": ["jquery.js", "background.js"]
+  },
+  "omnibox": {
+    "keyword": "demo"
+  },
+  "permissions":    [
+    "webNavigation",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+    "matches": [
+      "https://www.google.com/*"
+    ],
+    "css": ["styles.css"],
+    "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
